@@ -26,20 +26,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      info: "alex.johnson@email.com",
-      href: "mailto:alex.johnson@email.com"
+      info: "selvimadesh007@gmail.com",
+      href: "mailto:selvimadesh007@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      info: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      info: "+91 9150614484",
+      href: "tel:+91 9150614484"
     },
     {
       icon: MapPin,
       title: "Location",
-      info: "San Francisco, CA",
-      href: "#"
+      info: "Vellore, Tamil Nadu, India",
+      href: "https://www.google.com/maps/place/Vellore,+Tamil+Nadu,+India"
     }
   ];
 

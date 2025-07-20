@@ -23,18 +23,18 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
             <span className="block">Hello, I'm</span>
             <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-teal-400 bg-clip-text text-transparent animate-gradient">
-              Alex Johnson
+              Madesh
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Full Stack Developer & UI/UX Designer crafting beautiful, functional digital experiences
+           Front End Developer, Vibe coder & UI/UX Designer crafting beautiful, functional digital experiences
           </p>
 
           <div className="flex justify-center space-x-6 mb-12">
             {[
-              { icon: Github, href: '#', label: 'GitHub' },
-              { icon: Linkedin, href: '#', label: 'LinkedIn' },
+              { icon: Github, href: 'https://github.com/Maddyhub007/',  to:"blank",label: 'GitHub' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/madesh2207mad2004/', label: 'LinkedIn' },
               { icon: Mail, href: '#contact', label: 'Contact' }
             ].map(({ icon: Icon, href, label }) => (
               <a

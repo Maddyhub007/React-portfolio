@@ -33,7 +33,7 @@ const About = () => {
             About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate developer with 5+ years of experience creating digital solutions that make a difference.
+            I'm a passionate developer with 3+ years of experience creating digital solutions that make a difference.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ const About = () => {
               <p>
                 My journey in web development started with a curiosity about how things work on the internet. 
                 Today, I specialize in creating full-stack applications using modern technologies like React, 
-                Node.js, and cloud platforms.
+                 and cloud platforms.
               </p>
               <p>
                 I believe in the power of clean, efficient code and beautiful design working together to 
