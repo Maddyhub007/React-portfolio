@@ -1,55 +1,59 @@
-import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
-
+import mad_movies from '../assets/mad_movies.png';
+import food from '../assets/food.png';
+import skillsphere from '../assets/skillsphere.png';
+import webintax from '../assets/webintax.png';
+import tic from '../assets/tic.png';
+import digital from '../assets/digital.png';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment integration, and admin dashboard.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      github: "#",
-      live: "#"
+      title: "Mad Movie Platform",
+      description: "A front-end movie platform built with React,and TMDB movie database. Features include search options,fetching top rated and popular movies using api.",
+      image: mad_movies,
+      technologies: ["React","TMDB API","Tailwind CSS"],
+      github: "https://github.com/Maddyhub007/mad-movies.git",
+      live: "https://maddy-movies007.netlify.app/"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["React", "Socket.io", "MongoDB", "Express"],
-      github: "#",
-      live: "#"
+      title: "Food Explorer App",
+      description: "A responsive food explorer app that allows users to discover the nutritious foods and helps users to filter and search their favourite foods.",
+      image: food,
+      technologies: ["React", "Next.js", "OpenFoodFacts api", "tailwind css"],
+      github: "https://github.com/Maddyhub007/intern-project.git",
+      live: "https://food-explorer-app12345.netlify.app/"
     },
     {
-      title: "Weather Analytics Dashboard",
-      description: "A responsive weather dashboard with interactive charts, forecasts, and location-based weather data using external APIs.",
-      image: "https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Tailwind"],
-      github: "#",
-      live: "#"
+      title: "Skill Sphere",
+      description: "This is a hackathon project which is a full-stack web app that enables peer to peer learning and skill sharing. Front end is with Next.js and backend is with clerk and appwrite.",
+      image: skillsphere,
+      technologies: ["Next.js", "Tailwind css", "Clerk authentication", "Appwrite"],
+      github: "https://github.com/Maddyhub007/Skill-Sphere.git",
+      live: "https://skill-sphere-omega.vercel.app/"
     },
     {
-      title: "Social Media Analytics",
-      description: "A comprehensive analytics platform for social media managers with data visualization, reporting, and scheduling features.",
-      image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Next.js", "D3.js", "Python", "FastAPI"],
-      github: "#",
-      live: "#"
+      title: "Webintax",
+      description: "A comprehensive Tax consultancy website built for the company webintax which is a front end focused react project with home,about,contact,services and it consists of a total of 51 pages.",
+      image: webintax,
+      technologies:["Tailwind css", "React", "TypeScript","Shadcn-ui"],
+      github: "https://github.com/Maddyhub007/tax-haven-web.git",
+      live: "https://webintax.com/"
     },
     {
-      title: "AI Content Generator",
-      description: "An AI-powered content creation tool that helps users generate blog posts, social media content, and marketing copy.",
-      image: "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["React", "OpenAI API", "Node.js", "MongoDB"],
-      github: "#",
-      live: "#"
+      title: "Tic-Tac-Toe",
+      description: "A simple tic-tac-toe game built with react which has the features of counting the wins and storing it and reset button to reset the game. It is a fun project to play with friends and family.",
+      image: tic,
+      technologies: ["React", "Tailwind css", "Shadcn-ui"],
+      github: "https://github.com/Maddyhub007/tic-tac-toe.git",
+      live: "https://tic-tac-toemaddy007.netlify.app/"
     },
     {
-      title: "Crypto Portfolio Tracker",
-      description: "A real-time cryptocurrency portfolio tracking application with price alerts, portfolio analytics, and market insights.",
-      image: "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["TypeScript", "React", "CoinGecko API", "Firebase"],
-      github: "#",
-      live: "#"
+      title: "Digital Clock",
+      description: "A real-time digital clock which is a simple project using react hooks useState and useEffect. This project fetches the current time and displays it in a user-friendly format.",
+      image: digital,
+      technologies: ["TypeScript", "React", "useState", "useEffect"],
+      github: "https://github.com/Maddyhub007/digital-clock.git",
+      live: "https://maddy-digital-clock.netlify.app/"
     }
   ];
 
@@ -118,11 +122,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <button className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-            <span className="relative z-10">View All Projects</span>
-          </button>
-        </div>
+        
       </div>
     </section>
   );

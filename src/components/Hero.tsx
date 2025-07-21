@@ -1,4 +1,3 @@
-import React from 'react';
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
@@ -28,18 +27,20 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-           Front End Developer, Vibe coder & UI/UX Designer crafting beautiful, functional digital experiences
+          I'm a Frontend Developer and passionate coder who turns ideas into interactive, responsive web experiences.
           </p>
 
           <div className="flex justify-center space-x-6 mb-12">
             {[
-              { icon: Github, href: 'https://github.com/Maddyhub007/',  to:"blank",label: 'GitHub' },
-              { icon: Linkedin, href: 'https://www.linkedin.com/in/madesh2207mad2004/', label: 'LinkedIn' },
+              { icon: Github, href: 'https://github.com/Maddyhub007/',target:'_blank',label: 'GitHub' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/madesh2207mad2004/',target:'_blank', label: 'LinkedIn' },
               { icon: Mail, href: '#contact', label: 'Contact' }
-            ].map(({ icon: Icon, href, label }) => (
+            ].map(({ icon: Icon, href,target, label }) => (
               <a
                 key={label}
                 href={href}
+                target={target}
+                rel={target === "_blank" ? "noopener noreferrer" : undefined}
                 className="group p-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110 hover:-translate-y-1"
                 aria-label={label}
               >
@@ -50,13 +51,13 @@ const Hero = () => {
 
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
             <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
-              <span className="relative z-10">View My Work</span>
+              <a href="#projects"><span className="relative z-10">View My Work</span></a>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-teal-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
             
-            <button className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
+            <a href="Madesh_Resume.pdf" download><button className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300 transform hover:scale-105">
               Download CV
-            </button>
+            </button></a>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Palette, Rocket, Users } from 'lucide-react';
 
 const About = () => {
@@ -54,10 +53,10 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-4 pt-6">
               {[
-                { label: "Projects Completed", value: "50+" },
-                { label: "Happy Clients", value: "30+" },
-                { label: "Years Experience", value: "5+" },
-                { label: "Technologies", value: "20+" }
+                { label: "Projects Completed", value: "40+" },
+                { label: "Happy Clients", value: "10+" },
+                { label: "Years Experience", value: "3+" },
+                { label: "Technologies", value: "10+" }
               ].map((stat) => (
                 <div key={stat.label} className="text-center p-4 bg-white rounded-lg shadow-sm">
                   <div className="text-2xl font-bold text-blue-600">{stat.value}</div>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Skills = () => {
   const skillCategories = [
     {
@@ -9,27 +7,27 @@ const Skills = () => {
         { name: "TypeScript", level: 90 },
         { name: "Next.js", level: 85 },
         { name: "Tailwind CSS", level: 95 },
-        { name: "Vue.js", level: 75 }
+        { name: "Vibe Coding", level: 75 }
       ]
     },
     {
-      title: "Backend",
+      title: "DSA & Problem Solving",
       skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "PostgreSQL", level: 80 },
-        { name: "MongoDB", level: 85 },
-        { name: "GraphQL", level: 75 }
+        { name: "C++", level: 90 },
+        { name: "Data Structures", level: 85 },
+        { name: "Algorithms", level: 80 },
+        { name: "LeetCode", level: 80 },
+        { name: "Coding Ninjas", level: 75 }
       ]
     },
     {
       title: "Tools & Others",
       skills: [
         { name: "Git", level: 95 },
-        { name: "Docker", level: 80 },
-        { name: "AWS", level: 75 },
-        { name: "Figma", level: 85 },
-        { name: "Jest", level: 80 }
+        { name: "Github", level: 80 },
+        { name: "VS Code", level: 75 },
+        { name: "Bootstrap", level: 85 },
+        { name: "Vercel & Netlify", level: 80 }
       ]
     }
   ];
@@ -85,8 +83,8 @@ const Skills = () => {
           <h3 className="text-2xl font-bold text-white mb-8">Technologies I Work With</h3>
           <div className="flex flex-wrap justify-center gap-6">
             {[
-              "React", "Node.js", "TypeScript", "Python", "PostgreSQL", "MongoDB", 
-              "AWS", "Docker", "Git", "Figma", "Next.js", "Tailwind"
+              "React", "C++", "TypeScript", "Python", "SQL", "Appwrite", 
+              "Github", "Vercel", "Git", "Figma", "Next.js", "Tailwind"
             ].map((tech, index) => (
               <div
                 key={tech}
